@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <cniao5.com.cniao5shop.widget.CNiaoToolBar
+        android:id="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationIcon="@drawable/icon_back_32px"
+        app:title="Wallet creation" />
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:background="@drawable/selector_view_block"-->
+        <!--android:padding="@dimen/largePadding">-->
+
+
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingTop="@dimen/largePadding"-->
+            <!--android:paddingBottom="@dimen/largePadding"-->
+
+            <!--&gt;-->
+
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="国家或者地区"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--/>-->
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/txtCountry"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="中国"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="16sp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--/>-->
+
+        <!--</RelativeLayout>-->
+        <!--<View-->
+            <!--style="@style/line_vertical"-->
+
+            <!--/>-->
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingTop="@dimen/largePadding"-->
+            <!--android:paddingBottom="@dimen/largePadding"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/txtCountryCode"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="+86"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="16sp"-->
+                <!--android:layout_marginRight="10dp"-->
+
+                <!--/>-->
+
+            <!--<View-->
+                <!--style="@style/line_horizontal"/>-->
+
+            <!--<cniao5.com.cniao5shop.widget.ClearEditText-->
+                <!--android:id="@+id/edittxt_phone"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="@style/editText_base"-->
+                <!--android:hint="请输入常用手机号码"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:inputType="phone"/>-->
+
+
+
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+            <!--style="@style/line_vertical"-->
+
+            <!--/>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingTop="@dimen/largePadding"-->
+            <!--android:paddingBottom="@dimen/largePadding"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+
+
+            <!--<TextView-->
+
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="密码"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="16sp"-->
+                <!--android:layout_marginRight="10dp"-->
+
+                <!--/>-->
+
+            <!--<View-->
+                <!--style="@style/line_horizontal"/>-->
+
+            <!--<cniao5.com.cniao5shop.widget.ClearEditText-->
+                <!--android:id="@+id/edittxt_pwd"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="@style/editText_base"-->
+                <!--android:hint="请输入密码"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:inputType="textPassword"/>-->
+
+
+
+        <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/selector_view_block"
+        android:padding="@dimen/largePadding">
+
+
+        <cniao5.com.cniao5shop.widget.ClearEditText
+            android:id="@+id/etxt_pn"
+            style="@style/editText_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_edit_32"
+            android:drawablePadding="20dp"
+            android:hint="Enter the wallet name "
+            android:inputType="text" />
+
+        <View
+            style="@style/line_vertical"/>
+
+
+        <cniao5.com.cniao5shop.widget.ClearEditText
+            android:id="@+id/etxt_pwd_3"
+            style="@style/editText_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_lock"
+            android:drawablePadding="20dp"
+            android:hint="Please enter your password "
+            android:inputType="textPassword" />
+
+        <cniao5.com.cniao5shop.widget.ClearEditText
+            android:id="@+id/etxt_pwd_4"
+            style="@style/editText_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_lock"
+            android:drawablePadding="20dp"
+            android:hint="Please repeat the password "
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="@dimen/largePadding"
+        android:text=" By clicking the Create button, you agree to the Cloud and Fish User Agreement."
+        android:textColor="@color/border_color"
+        android:textSize="12sp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="@dimen/largePadding"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/progressbar"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/createWalletBtn"
+            style="@style/bigBlueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="30dp"
+            android:onClick="progressBar_Reg"
+            android:text="Create" />
+
+        <Button
+            android:id="@+id/btn_login_1"
+            style="@style/bigGreyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Have a wallet? Import " />
+
+    </LinearLayout>
+
+
+</LinearLayout>
